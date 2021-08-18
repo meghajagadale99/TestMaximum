@@ -1,6 +1,14 @@
 package com.bridgelabz;
 
-public class FindMax {
+public class FindMax<T extends Comparable<T>> {
+
+    T a1, a2, a3;
+
+    public FindMax(T a1, T a2, T a3) {
+        this.a1 = a1;
+        this.a2 = a2;
+        this.a3 = a3;
+    }
     public static <T extends Comparable<T>> T maxOfValues(T a1, T a2, T a3) {
         T max = a1;
         if (a2.compareTo(max) > 0)
